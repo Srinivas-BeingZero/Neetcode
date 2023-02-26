@@ -1,12 +1,9 @@
 const express = require("express");
 const app = express();
+app.use(express.static("frontend"))
 
 app.get("/",(req,res)=>{
-    res.send("hello world");
-});
-
-app.get("/myName",(req,res)=>{
-    res.send("Srinivas is my name");
+    res.sendFile(__dirname+"/frontend/simple.html");
 });
 
 app.listen(3000,()=>{
