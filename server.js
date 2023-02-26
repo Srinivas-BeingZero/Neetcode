@@ -9,6 +9,6 @@ app.get("/myName",(req,res)=>{
     res.send("Srinivas is my name");
 });
 
-app.listen(200,()=>{
+app.listen(3000,()=>{
     console.log("server up and running");
 });
