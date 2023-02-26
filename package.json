@@ -1,0 +1,22 @@
+{
+  "name": "neetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SrinivasBZ/Neetcode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SrinivasBZ/Neetcode/issues"
+  },
+  "homepage": "https://github.com/SrinivasBZ/Neetcode#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
