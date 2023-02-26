@@ -4,6 +4,16 @@ module.exports.getAllCourses = async ()=>{
     return await courseModel.find({});
 }
 
+module.exports.createCourse = async (courseInput)=>{
+    const course = new courseModel(courseInput);
+    await course.save();
+}
+
+// update:
+module.exports.updateCourse = async (courseId, updatedInput)=>{
+    await courseModel.findOneAndUpdate({_id:courseId},updatedInput);
+}
+
 // create: 
 module.exports.createFirstCourse = async ()=>{
     const courses = await courseModel.find({});
